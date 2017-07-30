@@ -1,7 +1,5 @@
-
 [Localization]
 lang rus
-
 
 [Camera]
 Fov	45.0
@@ -14,19 +12,15 @@ FreeCamera 1
 Yaw	1.0
 Pitch	1.0
 
-
-
 [Console]
 texture texture/console.dds
 consolefont font/font.dds
-
 
 [SaveDir]
 path Save
 
 [LuaDebugFunction]
 name Debug
-
 
 [render]
 name	Direct3D11
@@ -46,15 +40,8 @@ on 1
 on 1
 path video/MC Sar & The Real McCoy - Run Away (Live @ TOTP).ogv
 
-
 [Scene]
-//path levels/level1/level_InstansingTest.xml
-path levels/level1/level_SDKTest.xml
-//path levels/level1/level_Impostor.xml
-//path levels/level1/level_LensFlare.xml
-//path levels/level1/level_FindBug.xml
-//path levels/level1/level_FindBug2.xml
-//path levels/level1/level_Particles_instanced.xml
+path levels/UserLevel0/UserLevel0.xml
 
 OcclusionCulling true
 HardwareOcclusionCulling true
