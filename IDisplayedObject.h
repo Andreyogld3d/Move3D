@@ -1,10 +1,10 @@
 //
 // Move3D Engine
 //
-// Copyright (C) 2017, by Andrey Geets (geecandrey@gmail.com)
+// Copyright (C) 2017, by Andrey Geets (geecandrey.@gmail.com)
 //
 // Move3DEngine SDK
-// Copyright (C) 2017, by Andrey Geets (geecandrey@gmail.com), Sergey Serb l-proger@yandex.ru
+// Copyright (C) 2017, by Andrey Geets (geecandrey.@gmail.com), Sergey Serb l-proger@yandex.ru
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -35,6 +35,20 @@ struct IDisplayedObject {
 	virtual const char* GetObjectName() const = 0;
 	//
 	virtual IMaterial* GetObjectMaterial() const = 0;
+	//
+	virtual void SetPosition(float x, float y, float z) = 0;
+	//
+	virtual const float* GetObjectPosition() = 0;
+	//
+	virtual void Scale(float scaleValue) = 0;
+	//
+	virtual float GetScale() const = 0;
+	// rotate object around 0X axis by given angle in radian
+	virtual void RotateX(float angle) = 0;
+	// rotate object around 0Y axis by given angle in radian
+	virtual void RotateY(float angle) = 0;
+	// rotate object around 0Z axis by given angle in radian
+	virtual void RotateZ(float angle) = 0;
 };
 
 #endif // __IDISPLAYEDOBJECT_H__
