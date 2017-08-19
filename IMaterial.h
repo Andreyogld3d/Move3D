@@ -1,10 +1,10 @@
 //
 // Move3D Engine
 //
-// Copyright (C) 2017, by Andrey Geets (geecandrey@gmail.com)
+// Copyright (C) 2017, by Andrey Geets (geecandrey.@gmail.com)
 //
 // Move3DEngine SDK
-// Copyright (C) 2017, by Andrey Geets (geecandrey@gmail.com), Sergey Serb l-proger@yandex.ru
+// Copyright (C) 2017, by Andrey Geets (geecandrey.@gmail.com), Sergey Serb l-proger@yandex.ru
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -40,6 +40,18 @@ struct IMaterial {
 		size_t n = sizeof(Type) / sizeof(float);
 		const float* fVal = reinterpret_cast<const float *>(&val);
 		SetShaderConstantValue(name, fVal, n);
+	}
+	// Update Shader constant by name
+	template<typename Type, typename StringType>
+	void SetShaderConstantValue(const StringType& name, const Type& val)
+	{
+		SetShaderConstantValue(name.c_str(), val);
+	}
+	// Update Shader constant by name
+	template<typename StringType>
+	void SetShaderConstantValue(const StringType& name, const float* val, size_t n = 1)
+	{
+		SetShaderConstantValue(name.c_str(), val, n);
 	}
 };
 
