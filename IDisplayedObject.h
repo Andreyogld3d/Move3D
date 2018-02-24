@@ -1,10 +1,10 @@
 //
 // Move3D Engine
 //
-// Copyright (C) 2017, by Andrey Geets (geecandrey.@gmail.com)
+// Copyright (C) 2017-2018, by Andrey Geets (geecandrey.@gmail.com)
 //
 // Move3DEngine SDK
-// Copyright (C) 2017, by Andrey Geets (geecandrey.@gmail.com), Sergey Serb l-proger@yandex.ru
+// Copyright (C) 2017-2018, by Andrey Geets (geecandrey.@gmail.com), Sergey Serb l-proger@yandex.ru
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -29,6 +29,13 @@
 #define __IDISPLAYEDOBJECT_H__
 
 struct IMaterial;
+// Quaternion
+struct quat {
+	float x;
+	float y; 
+	float z;
+	float w;
+};
 
 struct IDisplayedObject {
 	//
@@ -49,6 +56,8 @@ struct IDisplayedObject {
 	virtual void RotateY(float angle) = 0;
 	// rotate object around 0Z axis by given angle in radian
 	virtual void RotateZ(float angle) = 0;
+	// setup orientation for object using quaternion
+	virtual void SetOrientation(const quat& q) = 0;
 };
 
 #endif // __IDISPLAYEDOBJECT_H__

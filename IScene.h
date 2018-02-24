@@ -1,10 +1,10 @@
 //
 // Move3D Engine
 //
-// Copyright (C) 2017, by Andrey Geets (geecandrey@gmail.com)
+// Copyright (C) 2017-2018, by Andrey Geets (geecandrey.@gmail.com)
 //
 // Move3DEngine SDK
-// Copyright (C) 2017, by Andrey Geets (geecandrey@gmail.com), Sergey Serb l-proger@yandex.ru
+// Copyright (C) 2017-2018, by Andrey Geets (geecandrey.@gmail.com), Sergey Serb l-proger@yandex.ru
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
