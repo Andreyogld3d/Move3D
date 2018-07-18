@@ -39,6 +39,8 @@ struct quat {
 
 struct IDisplayedObject {
 	//
+	virtual void SetVisible(bool flag) = 0;
+	//
 	virtual const char* GetObjectName() const = 0;
 	//
 	virtual IMaterial* GetObjectMaterial() const = 0;
