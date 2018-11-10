@@ -29,10 +29,12 @@
 #define __IUSERCALLBACK_H__
 
 struct IScene;
+struct IUserInputCallback;
 
 struct IUserCallback {
 	virtual void Update(float dt) = 0;
 	virtual void Setup(IScene* scene) = 0;
+	virtual IUserInputCallback* GetUserInputCallback() = 0;
 };
 
 #endif // __IUSERCALLBACK_H__

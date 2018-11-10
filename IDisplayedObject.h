@@ -58,6 +58,8 @@ struct IDisplayedObject {
 	virtual void RotateY(float angle) = 0;
 	// rotate object around 0Z axis by given angle in radian
 	virtual void RotateZ(float angle) = 0;
+	// transform object by matrix
+	virtual void Transform(const float* matrix) = 0;
 	// setup orientation for object using quaternion
 	virtual void SetOrientation(const quat& q) = 0;
 };

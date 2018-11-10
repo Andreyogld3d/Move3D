@@ -32,7 +32,7 @@
 
 struct IMaterial {
 	typedef unsigned char ubyte;
-	// Set Tranbsparency 0.0f..1.0f
+	// Set Transparency 0.0f..1.0f
 	virtual void SetTransparency(float value) = 0;
 	// Update Shader constant by name
 	virtual void SetShaderConstantValue(const char* name, const float* val, size_t n = 1) = 0;

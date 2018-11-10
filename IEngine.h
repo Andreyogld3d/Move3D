@@ -35,10 +35,12 @@
 
 struct UserCallback;
 struct IUserCallback;
+struct IGizmos;
 
 struct IEngine {
 	virtual void SetUserCallback(UserCallback* usrCallback) = 0;
 	virtual void SetUserCallback(IUserCallback* usrCallback) = 0;
+	virtual IGizmos* GetGizmos() = 0;
 #ifdef _WIN32
 	virtual bool Run(int argc = 0, char** argv = NULL, HWND hWnd = NULL, bool isEditor = false, IUserCallback* userCallback = NULL) = 0;
 #endif
