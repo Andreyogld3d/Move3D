@@ -45,6 +45,8 @@ struct IDisplayedObject {
 	//
 	virtual IMaterial* GetObjectMaterial() const = 0;
 	//
+	virtual void SetObjectMaterial(IMaterial* material) = 0;
+	//
 	virtual void SetPosition(float x, float y, float z) = 0;
 	//
 	virtual const float* GetObjectPosition() = 0;

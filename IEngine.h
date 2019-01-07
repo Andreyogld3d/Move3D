@@ -23,7 +23,7 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
-// 
+//
 
 #ifndef __IENGINE_H__
 #define __IENGINE_H__
@@ -31,6 +31,11 @@
 #ifdef _WIN32
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
+typedef HWND WindowType;
+#elif !defined(EMBEDDED_SYSTEM)
+typedef unsigned long WindowType;
+#else
+typedef void* WindowType;
 #endif
 
 struct UserCallback;
@@ -41,9 +46,7 @@ struct IEngine {
 	virtual void SetUserCallback(UserCallback* usrCallback) = 0;
 	virtual void SetUserCallback(IUserCallback* usrCallback) = 0;
 	virtual IGizmos* GetGizmos() = 0;
-#ifdef _WIN32
-	virtual bool Run(int argc = 0, char** argv = NULL, HWND hWnd = NULL, bool isEditor = false, IUserCallback* userCallback = NULL) = 0;
-#endif
+	virtual bool Run(int argc = 0, char** argv = NULL, WindowType hWnd = NULL, bool isEditor = false, IUserCallback* userCallback = NULL) = 0;
 	static IEngine* GetEngine();
 };
 
