@@ -3,6 +3,7 @@
 ## Move3D is a free lightweight, cross-platform 3D graphics engine implemented in C/C++ and released under the MIT license.
     
 # Features
+
     - Unix/Windows/Mac OSX/IOS/Android support
     - Direct3D9(legacy), Direct3D11, OpenGL 3x, OpenGL ES 2.0-3x, Vulkan(Currently the separate project is based on Move3D code)
     - HLS/GLSL shaders
@@ -30,5 +31,6 @@
     - Fix stability and varius bugs
     
 ## Move3D uses the following third-party libraries:
-- pugixml
-- Lua
+
+- pugixml (https://github.com/zeux/pugixml)
+- Lua (https://github.com/lua/lua)
