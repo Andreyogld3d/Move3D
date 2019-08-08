@@ -30,7 +30,7 @@
     - Extend Post process system for SSAO
     - Fix stability and varius bugs
     
-## Move3D uses the following third-party libraries:
+## Move3D Engine uses the following third-party libraries:
 
 - pugixml (https://github.com/zeux/pugixml)
 - Lua (https://github.com/lua/lua)
