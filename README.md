@@ -9,13 +9,13 @@
     - HLS/GLSL shaders
     - Console/Log system
     - Skeletal and morph animation(with 3DS max export plugin)
-    - Binary mesh loading(with 3DS max export plugin)
-    - Particle rendering(with Experemental OpenCL Support)
+    - Binary mesh loading with 3DS max export plugin
+    - Particle rendering using GPU compute shaders for simulation and with Experemental OpenCL Support.
     - XML based scene loading format
     - Post-processing with using configurable XML based file format.
     - Hardware and software occlusion culling
     - KTX/DDS/PVR texture format support
-    - GPU occlusion culling (with Experemental OpenCL Support)
+    - GPU instanced culling using Compute shaders and Indirect Drawing (with Experemental OpenCL Support)
     - Terraing rendering with LOD system
     - Automatic instancing on SM3 capable hardware
     - Material system
